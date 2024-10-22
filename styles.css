@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#relatorios {
+    margin-top: 30px;
+}
+
+#lista-relatorios {
+    list-style-type: none;
+}
+
+#lista-relatorios li {
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #28a745;
+}
+
+#estoque {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: #f4f4f4;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}

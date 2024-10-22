@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Turnos e Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Relatório de Turnos e Gestão de Estoque</h1>
+
+        <!-- Formulário para registo de tarefas -->
+        <form id="turno-form">
+            <label for="turno">Escolhe o Turno:</label>
+            <select id="turno" required>
+                <option value="Manhã">Manhã</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noite">Noite</option>
+            </select>
+
+            <label for="tarefas">Tarefas Completas:</label>
+            <textarea id="tarefas" rows="4" required></textarea>
+
+            <label for="materiais">Materiais Usados:</label>
+            <input type="text" id="materiais" required>
+
+            <button type="submit">Submeter Relatório</button>
+        </form>
+
+        <!-- Área para mostrar os relatórios -->
+        <div id="relatorios">
+            <h2>Relatórios Submetidos</h2>
+            <ul id="lista-relatorios"></ul>
+        </div>
+
+        <!-- Gestão de Estoque -->
+        <div id="estoque">
+            <h2>Estoque de Materiais</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Quantidade</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-estoque">
+                    <!-- As linhas da tabela serão adicionadas via JavaScript -->
+                </tbody>
+            </table>
+
+            <!-- Formulário para adicionar ou remover materiais -->
+            <form id="estoque-form">
+                <label for="material-nome">Material:</label>
+                <input type="text" id="material-nome" required>
+
+                <label for="material-quantidade">Quantidade:</label>
+                <input type="number" id="material-quantidade" required>
+
+                <button type="submit">Atualizar Estoque</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
